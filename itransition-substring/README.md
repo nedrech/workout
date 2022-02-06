@@ -39,6 +39,7 @@ EFGH
 ```console
 nedrech@server:~$ node lcs.js ABCDEFGH 1234
 
+
 ```
 ```console
 nedrech@server:~$ node lcs.js ABCDEFGH
@@ -46,5 +47,6 @@ ABCDEFGH
 ```
 ```console
 nedrech@server:~$ node lcs.js
+
 
 ```

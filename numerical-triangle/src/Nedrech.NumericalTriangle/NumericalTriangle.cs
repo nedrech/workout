@@ -21,9 +21,8 @@ public class NumericalTriangle
     /// <exception cref="ArgumentException">It is thrown out if the level is incorrect</exception>
     private void EnsureValid()
     {
-        for (int i = 0; i < _levels.Length; i++)
-            if (i + 1 != _levels[i].Length)
-                throw new ArgumentException("Incorrect order of levels.");
+        if (_levels.Where((t, i) => i + 1 != t.Length).Any())
+            throw new ArgumentException("Incorrect order of levels.");
     }
 
     /// <summary>

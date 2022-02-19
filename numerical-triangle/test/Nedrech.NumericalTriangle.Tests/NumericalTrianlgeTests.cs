@@ -2,7 +2,7 @@ using Xunit;
 
 namespace Nedrech.NumericalTriangle.Tests;
 
-public class UnitTest1
+public class NumericalTrianlgeTests
 {
     [Fact]
     public void Test1()

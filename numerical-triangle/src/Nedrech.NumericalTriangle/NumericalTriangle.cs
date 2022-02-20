@@ -1,5 +1,8 @@
 ﻿namespace Nedrech.NumericalTriangle;
 
+/// <summary>
+/// A class for describing a numerical triangle.
+/// </summary>
 public class NumericalTriangle
 {
     private readonly double[][] _levels;

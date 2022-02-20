@@ -9,15 +9,16 @@ public class TreeNodeTests
     public void Should_Create_Object()
     {
         // Arrange
-        double[][] levels = {
+        double[][] levels =
+        {
             new[] {1.0},
             new[] {2.0, 3},
             new[] {4.0, 5, 6}
         };
-        
+
         // Act
         TreeNode tn = TreeNode.CreateTree(levels);
-        
+
         // Assert
         Assert.Equal(1, tn.Data);
         Assert.Equal(2, tn.Left?.Data);
@@ -32,19 +33,21 @@ public class TreeNodeTests
     public void Should_Calc_All_Fin_Sums()
     {
         // Arrange
-        double[][] levels1 = {
+        double[][] levels1 =
+        {
             new[] {1.0},
             new[] {2.0, 3},
             new[] {4.0, 5, 6}
         };
-        double[][] levels2 = {
+        double[][] levels2 =
+        {
             new[] {1.0},
             new[] {2.0, 3},
             new[] {4.0, -5, -6}
         };
         TreeNode tn1 = TreeNode.CreateTree(levels1);
         TreeNode tn2 = TreeNode.CreateTree(levels2);
-        
+
         // Act
         double[] endSums1 = tn1.CalcFinSums().ToArray(); // Length = 4 
         double[] endSums2 = tn2.CalcFinSums().ToArray(); // Length = 3, because ISet is used

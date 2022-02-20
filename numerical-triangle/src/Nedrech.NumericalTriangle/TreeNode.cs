@@ -48,10 +48,12 @@ public class TreeNode
     /// Recursive method for creating a binary tree.
     /// </summary>
     private static TreeNode? InsertLevel(double[][] arr, TreeNode? parent = null, int i = 0, int j = 0) =>
-        i >= arr.Length ? parent : new TreeNode
-        {
-            Data = arr[i][j],
-            Left = InsertLevel(arr, parent?.Left, i + 1, j),
-            Right = InsertLevel(arr, parent?.Right, i + 1, j + 1)
-        };
+        i >= arr.Length
+            ? parent
+            : new TreeNode
+            {
+                Data = arr[i][j],
+                Left = InsertLevel(arr, parent?.Left, i + 1, j),
+                Right = InsertLevel(arr, parent?.Right, i + 1, j + 1)
+            };
 }

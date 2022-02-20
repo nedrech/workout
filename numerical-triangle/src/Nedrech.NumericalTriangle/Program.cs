@@ -17,6 +17,7 @@ catch (OverflowException e)
     Console.WriteLine(e.Message);
     goto LevelsCountInput;
 }
+
 Console.WriteLine("Enter the level numbers each on a new line, separated by a space.");
 LevelsInput:
 Console.WriteLine("Example (comma for fractional numbers):");
@@ -37,6 +38,7 @@ catch (FormatException e)
     Console.WriteLine(e.Message);
     goto LevelsInput;
 }
+
 NumericalTriangle nTriangle;
 try
 {
@@ -48,6 +50,7 @@ catch (ArgumentException e)
     Console.WriteLine("Repeat entering the triangle.");
     goto LevelsInput;
 }
+
 Console.WriteLine($"Max sum: {nTriangle.MaxSum}.");
 Console.Write("Would you like to introduce another example? (y/[n]) ");
 if ((Console.ReadLine() ?? string.Empty).Normalize().StartsWith("y"))

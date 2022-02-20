@@ -38,22 +38,4 @@ public class NumericalTriangleTests
         // Assert
         Assert.NotNull(nt);
     }
-
-    [Fact]
-    public void Should_Calculate_Max_Sum()
-    {
-        // Arrange
-        double[][] levels = {
-            new[] {1.0},
-            new[] {2.0, 3},
-            new[] {4.0, 5, 6}
-        };
-        NumericalTriangle nt = new(levels);
-
-        // Act
-        var result = nt.MaxSum;
-        
-        // Assert
-        Assert.Equal(10, result);
-    }
 }

@@ -21,7 +21,7 @@ public class NumericalTriangle
     /// <summary>
     /// The function checks the correctness of the triangle levels.
     /// </summary>
-    /// <exception cref="ArgumentException">It is thrown out if the level is incorrect</exception>
+    /// <exception cref="ArgumentException">It is thrown out if the level is incorrect.</exception>
     private void EnsureValid()
     {
         if (_levels.Where((t, i) => i + 1 != t.Length).Any())

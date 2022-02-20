@@ -46,8 +46,8 @@ public class TreeNodeTests
         TreeNode tn2 = TreeNode.CreateTree(levels2);
         
         // Act
-        var endSums1 = tn1.CalcFinSums().ToArray(); // Length = 4 
-        var endSums2 = tn2.CalcFinSums().ToArray(); // Length = 3, because ISet is used
+        double[] endSums1 = tn1.CalcFinSums().ToArray(); // Length = 4 
+        double[] endSums2 = tn2.CalcFinSums().ToArray(); // Length = 3, because ISet is used
 
         // Assert
         Assert.Equal(7, endSums1[0]);

@@ -32,9 +32,6 @@ public class NumericalTriangle
     /// The function finds the maximum sum of the triangle numbers in depth.
     /// </summary>
     /// <returns>Maximum sum of the triangle numbers.</returns>
-    private double CalcMaxSum()
-    {
-        
-        return 0;
-    }
+    private double CalcMaxSum() =>
+        TreeNode.CreateTree(_levels).CalcFinSums().Max();
 }
